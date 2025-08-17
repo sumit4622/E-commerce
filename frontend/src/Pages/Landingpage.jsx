@@ -24,10 +24,8 @@ export default function Landingpage() {
 
             
             < section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-50 dark:bg-gray-900" >
-                {/* Background Pattern */}
                 < div className="absolute inset-0" >
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800"></div>
-                    {/* Subtle floating elements */}
                     <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-teal-500/5 rounded-full blur-3xl animate-pulse"></div>
                     <div className="absolute top-3/4 right-1/4 w-96 h-96 bg-teal-600/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
                 </div >
@@ -63,7 +61,6 @@ export default function Landingpage() {
                     </div>
                 </div>
 
-                {/* Scroll Indicator */}
                 <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
                     <div className="w-6 h-10 border-2 border-teal-600/30 dark:border-teal-400/30 rounded-full flex justify-center">
                         <div className="w-1 h-3 bg-teal-600/50 dark:bg-teal-400/50 rounded-full mt-2 animate-pulse"></div>
@@ -71,7 +68,6 @@ export default function Landingpage() {
                 </div>
             </section >
 
-            {/* Services Section - 70% White background with 30% Teal accents */}
             < section id="services" className="py-20 bg-white dark:bg-gray-800" >
                 <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
@@ -111,7 +107,6 @@ export default function Landingpage() {
                         ))}
                     </div>
 
-                    {/* Features Grid - 10% accent colors */}
                     <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
                         {[
                             { icon: Zap, text: "Lightning Fast" },
@@ -130,7 +125,6 @@ export default function Landingpage() {
                 </div>
             </section >
 
-            {/* About Section - 30% Dark background with Teal accents */}
             < section id="about" className="py-20 bg-gray-900 dark:bg-gray-800 text-white" >
                 <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -177,7 +171,6 @@ export default function Landingpage() {
                                 </div>
                             </div>
 
-                            {/* Floating elements with teal accents */}
                             <div className="absolute -top-6 -right-6 w-24 h-24 bg-teal-500/10 rounded-full blur-xl animate-pulse"></div>
                             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-teal-600/10 rounded-full blur-xl animate-pulse delay-1000"></div>
                         </div>
@@ -185,7 +178,7 @@ export default function Landingpage() {
                 </div>
             </section >
 
-            {/* Contact Section - 70% White background */}
+            
             < section id="contact" className="py-20 bg-white dark:bg-gray-800" >
                 <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
@@ -198,7 +191,7 @@ export default function Landingpage() {
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                        {/* Contact Info */}
+                        
                         <div className="space-y-8">
                             <div className="bg-gray-50 dark:bg-gray-700 rounded-2xl p-8">
                                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Let's Connect</h3>
@@ -225,7 +218,6 @@ export default function Landingpage() {
                             </div>
                         </div>
 
-                        {/* Contact Form */}
                         <div className="bg-gray-50 dark:bg-gray-700 rounded-2xl p-8">
                             <form className="space-y-6">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -269,7 +261,6 @@ export default function Landingpage() {
                 </div>
             </section >
 
-            {/* Footer - 10% Dark accent */}
             < footer className="bg-gray-900 dark:bg-gray-800 text-white py-12" >
                 <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
