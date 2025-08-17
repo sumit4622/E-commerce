@@ -5,6 +5,14 @@ import { Button } from "@/components/ui/button"
 export default function Header() {
     const navigate = useNavigate();
 
+    const handleloginNviagte = () => {
+        navigate('/login');
+    }
+
+    function sumit() {
+        navigate("/Register")
+    }
+
     return (
         <div>
             <header className="bg-white dark:bg-gray-900">
@@ -25,34 +33,16 @@ export default function Header() {
                                 <li>
                                     <a
                                         className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#"
+                                        href="#home"
                                     >
-                                        About
+                                        Home
                                     </a>
                                 </li>
 
                                 <li>
                                     <a
                                         className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#"
-                                    >
-                                        Careers
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#"
-                                    >
-                                        History
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a
-                                        className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#"
+                                        href="#services"
                                     >
                                         Services
                                     </a>
@@ -61,29 +51,31 @@ export default function Header() {
                                 <li>
                                     <a
                                         className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#"
+                                        href="#about"
                                     >
-                                        Projects
+                                        About Us
                                     </a>
                                 </li>
 
                                 <li>
                                     <a
                                         className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#"
+                                        href="#contact"
                                     >
-                                        Blog
+                                        contact
                                     </a>
                                 </li>
+
+                                
                             </ul>
                         </nav>
 
                         <div className="flex items-center gap-4">
                             <div className="sm:flex sm:gap-4">
 
-                                <Button className="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-teal-500"href="#" (onClick) => navigate</div>> Login</Button>
+                                <Button className="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 dark:hover:bg-teal-500" href="#" onClick={handleloginNviagte}> Login</Button>
 
-                                <Button className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block dark:bg-gray-800 dark:text-white dark:hover:text-white/75"href="#"> Register</Button>
+                                <Button className="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block dark:bg-gray-800 dark:text-white dark:hover:text-white/75" href="#" onClick={sumit}> Register</Button>
 
                             </div>
 
