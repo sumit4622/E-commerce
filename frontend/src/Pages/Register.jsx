@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Register() {
     const [formData, setFormData] = useState({
-        email: '',
-        password: '',
-        confirmpassword: '',
+        email: "",
+        password: "",
+        confirmpassword: "",
     });
 
     const naviagte = useNavigate();
