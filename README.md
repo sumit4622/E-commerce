@@ -2,8 +2,8 @@
 
 *Empowering Seamless Commerce, Igniting Digital Growth*
 
-[![Last Commit](https://img.shields.io/github/last-commit/<USER>/<REPO>?style=for-the-badge&color=007ACC)]()
-[![Languages Count](https://img.shields.io/github/languages/count/<USER>/<REPO>?style=for-the-badge&color=03A9F4)]()
+[![Last Commit](https://img.shields.io/github/last-commit/sumit4622/E-commerce?style=for-the-badge&color=007ACC)]()
+[![Languages Count](https://img.shields.io/github/languages/count/sumit4622/E-commerce?style=for-the-badge&color=03A9F4)]()
 
 ---
 
@@ -36,3 +36,4 @@ npm run dev
 cd backend
 pip install -r requirements.txt
 python manage.py runserver
+
