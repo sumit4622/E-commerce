@@ -55,12 +55,12 @@ export default function Register() {
                                 </div>
                                 <Button
                                     type="submit"
-                                    className="w-full text-teal-600 focus:ring-4 bg-gray-100 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:focus:ring-primary-800  sm:block dark:bg-gray-800 dark:text-white "
+                                    className="w-full text-white text-sm focus:ring-4 bg-teal-600 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:focus:ring-primary-800  sm:block dark:bg-gray-800 dark:text-white "
                                 >
-                                    Register
+                                    Sign Up
                                 </Button>
                                 <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                                    Already have an account? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500" onClick={handleloginNviagte}>Login here</a>
+                                    Already have an account? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500" onClick={handleloginNviagte}>Sign In</a>
                                 </p>
                             </form>
                         </div>

@@ -38,7 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'rest_framework_simplejwt'
+    'rest_framework_simplejwt',
+    'social_django',
+    'oauth2_provider',
+    'corsheaders',
+
+    'api',
+    'authentication',
 ]
 
 MIDDLEWARE = [
@@ -56,6 +62,9 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+        'drf_social_oauth2.authenication.SocialAuthentication',
+
     ]
 }
 
@@ -71,12 +80,30 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
 ]
 
 WSGI_APPLICATION = 'Backend.wsgi.application'
+
+AUTHENTICATION_BACKENDS = (
+    # google Integration
+    # google OAuth2
+    'social_core.backends.google.GoogleOAuth2',
+
+    # Facebook Integration
+    'social_core.backends.facebook.FacebookAppOAuth2',
+    'social_core.backends.facebook.FacebookOAuth2',
+
+    # drf_social_oauth2
+    'drf_social_oauth2.backends.DjangoOAuth2',
+
+    # Django
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 
 # Database
@@ -130,3 +157,16 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+# Google configuration
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '<your-client-id>'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '<your-client-secret>'
+
+# Facebook configuration
+SOCIAL_AUTH_FACEBOOK_KEY = '<your-app-id>'
+SOCIAL_AUTH_FACEBOOK_SECRET = '<your-app-secret>'
+
+# Define the scope (what data you want from the provider)
+SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = ['email', 'profile']
