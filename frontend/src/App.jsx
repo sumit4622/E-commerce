@@ -1,21 +1,20 @@
-import Login from './Pages/Login'
-import Header from './component/Header'
-import Register from './Pages/Register'
-import Landingpage from './Pages/Landingpage';
+import Login from "./Pages/Login";
+// import Header from './component/Header'
+import Register from "./Pages/Register";
+import Landingpage from "./Pages/Landingpage";
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
 // import './App.css'
 
 function App() {
-
-  return (
+    return (
     <Routes>
-      <Route path='/' element={<Landingpage />} />
-      <Route path='/login' element={<Login />} />
-      <Route path='/Register' element={<Register />} />
+      <Route path="/" element={<Landingpage />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/Register" element={<Register />} />
     </Routes>
-  )
+    );
 }
 
-export default App
+export default App;

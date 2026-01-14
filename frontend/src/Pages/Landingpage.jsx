@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag, Users, Shield, Zap, Star, ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
 import Header from '../component/Header';
 
@@ -133,10 +133,10 @@ export default function Landingpage() {
                                 About Our <span className="text-teal-400">Platform</span>
                             </h2>
                             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                                We're revolutionizing e-commerce by creating a seamless marketplace where vendors can easily showcase their products and customers can discover amazing deals. Our platform combines cutting-edge technology with user-friendly design.
+                                We&apos;re revolutionizing e-commerce by creating a seamless marketplace where vendors can easily showcase their products and customers can discover amazing deals. Our platform combines cutting-edge technology with user-friendly design.
                             </p>
                             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                                With thousands of satisfied vendors and millions of happy customers, we're building the future of online shopping, one transaction at a time.
+                                With thousands of satisfied vendors and millions of happy customers, we&apos;re building the future of online shopping, one transaction at a time.
                             </p>
 
                             <div className="grid grid-cols-3 gap-8 mb-8">
@@ -186,7 +186,7 @@ export default function Landingpage() {
                             Get In <span className="text-teal-600 dark:text-teal-400">Touch</span>
                         </h2>
                         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                            Ready to join our marketplace? Have questions? We're here to help you succeed.
+                            Ready to join our marketplace? Have questions? We&apos;re here to help you succeed.
                         </p>
                     </div>
 
@@ -194,7 +194,7 @@ export default function Landingpage() {
                         
                         <div className="space-y-8">
                             <div className="bg-gray-50 dark:bg-gray-700 rounded-2xl p-8">
-                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Let's Connect</h3>
+                                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Let&apos;s Connect</h3>
 
                                 {[
                                     { icon: Phone, title: "Phone", info: "+1 (555) 123-4567", link: "tel:+15551234567" },
@@ -238,7 +238,7 @@ export default function Landingpage() {
                                     className="w-full px-4 py-3 rounded-md border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-teal-500 focus:outline-none transition-colors duration-200"
                                 />
                                 <select className="w-full px-4 py-3 rounded-md border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-teal-500 focus:outline-none transition-colors duration-200">
-                                    <option>I'm interested in...</option>
+                                    <option>I&apos;m interested in...</option>
                                     <option>Becoming a Vendor</option>
                                     <option>Customer Support</option>
                                     <option>Partnership</option>
