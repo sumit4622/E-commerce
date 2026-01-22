@@ -132,7 +132,6 @@ export default function Register() {
                       className={`flex items-center gap-2 text-xs font-medium transition-colors ${item.met ? "text-teal-600" : "text-gray-400"
                         }`}
                     >
-                      {/* This is a simple circle that turns teal when the rule is met */}
                       <div className={`h-2 w-2 rounded-full ${item.met ? "bg-teal-500 shadow-[0_0_5px_rgba(20,184,166,0.5)]" : "bg-gray-300"
                         }`} />
 
