@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { login_schema } from "../utils/inputvalidation";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -11,8 +11,11 @@ export default function Login() {
     }
   );
 
+  const navigate = useNavigate()
+
   const onSubmit = (data) => {
     console.log(data);
+    navigate('/Register/verify-otp')
   };
 
   return (
