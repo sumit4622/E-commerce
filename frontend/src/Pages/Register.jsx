@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { register_user_schema } from "../utils/inputvalidation";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -18,8 +18,14 @@ export default function Register() {
   });
 
   const rules = Passwordvalidation(control)
+
+  const navigate = useNavigate()
+
+  
+
   const onSubmit = (data) => {
     console.log(data);
+    navigate('/Register/verify-otp')
   };
 
   return (
@@ -139,7 +145,7 @@ export default function Register() {
                     </li>
                   ))}
                 </ul>
-                <Button type="submit" className="btn-teal">
+                <Button type="submit" className="btn-teal" onClick={onSubmit}>
                   Sign Up
                 </Button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">

@@ -36,3 +36,11 @@ export const login_schema = z
         password: z
             .string()
     })
+
+
+export const opt_Schema = z.object({
+  pin: z
+    .string()
+    .length(6, "OTP must be exactly 6 digits")
+    .regex(/^\d{6}$/, "OTP must contain only numbers"),
+});
