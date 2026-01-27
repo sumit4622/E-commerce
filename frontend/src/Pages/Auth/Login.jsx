@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { login_schema } from "../utils/inputvalidation";
+import { login_schema } from "../../utils/validation/inputvalidation";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 export default function Login() {

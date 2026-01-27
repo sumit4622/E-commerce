@@ -1,4 +1,4 @@
-import { useOTPHandlers } from './useOTPHandlers';
+import { useOTPHandlers } from "../../../hooks/useOTPHandlers";
 import { Separator } from "radix-ui";
 import PropTypes from 'prop-types';
 

@@ -1,5 +1,5 @@
-import { OTPInput } from "../components/OTP/OTPInput";
-import { opt_Schema } from "../utils/inputvalidation";
+import { OTPInput } from "../../components/common/Input/OTPInput";
+import { opt_Schema } from "../../utils/validation/inputvalidation";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Link } from "react-router-dom";
