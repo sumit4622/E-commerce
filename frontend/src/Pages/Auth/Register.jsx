@@ -14,7 +14,7 @@ export default function Register() {
     formState: { errors },
   } = useForm({
     resolver: zodResolver(register_user_schema),
-    mode:'onChange'
+    mode:'onSubmit'
   });
 
   const rules = Passwordvalidation(control)
