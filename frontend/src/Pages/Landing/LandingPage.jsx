@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ShoppingBag, Users, Shield, Zap, Star, ArrowRight, Phone, Mail, MapPin } from 'lucide-react';
-import Header from '../component/Header';
+import Header from "../../components/common/Header/Header"
 
 export default function Landingpage() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

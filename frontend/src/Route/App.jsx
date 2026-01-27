@@ -1,9 +1,8 @@
-import Login from "./Pages/Login";
-// import Header from './component/Header'
-import Register from "./Pages/Register";
-import Landingpage from "./Pages/Landingpage";
-import OTP from "./Pages/OTP";
-import   NotFound  from './Pages/NotFound';
+import Login from "../Pages/Auth/Login"
+import Register from "../Pages/Auth/Register";
+import LandingPage from "../Pages/Landing/LandingPage";
+import OTP from "../Pages/Auth/OTP";
+import   NotFound  from '../Pages/NotFound/NotFound';
 
 import { Routes, Route } from "react-router-dom";
 
@@ -12,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
     return (
     <Routes>
-      <Route path="/" element={<Landingpage />} />
+      <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/Register" element={<Register />} />
       <Route path="/Register/verify-otp" element={<OTP />} />

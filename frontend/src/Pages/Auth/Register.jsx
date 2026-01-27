@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { register_user_schema } from "../utils/inputvalidation";
+import { register_user_schema } from "../../utils/validation/inputvalidation";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Passwordvalidation } from "../utils/Passwordvalidation";
-import "../App.css";
+import { Passwordvalidation } from "../../utils/validation/Passwordvalidation";
+import "../../styles/App.css";
 
 export default function Register() {
   const {
