@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 export default function Login() {
   const {register, handleSubmit, formState: {errors}} = useForm(
     {resolver: zodResolver(login_schema),
-      mode: "onChange",
+      mode: "onSubmit",
     }
   );
 
